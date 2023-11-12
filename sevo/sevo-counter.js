@@ -96,6 +96,11 @@ class SevoCounter extends HTMLElement {
     this.counterService.onUpdate = (evt) => {
       console.log("onUpdate");
       this.elements.counterDisplay.innerText = evt.count;
+      this.dispatchEvent(
+        new CustomEvent("counterChanged", {
+          detail: { count: this.counterService.count },
+        })
+      );
     };
     this.counterService.count = this.startCount;
   }

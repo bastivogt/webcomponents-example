@@ -16,3 +16,8 @@ cards[1].addEventListener("clicked", (evt) => {
   console.log("detail:", evt.detail);
   evt.target.setAttribute("title", "Test");
 });
+
+const counter2 = document.getElementById("sevo-counter-2");
+counter2.addEventListener("counterChanged", (evt) => {
+  console.log("counter2", "count:", evt.detail.count);
+});
