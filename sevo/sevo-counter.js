@@ -61,10 +61,10 @@ template.innerHTML = /*html*/ `
         }
     </style>
     <div id="counter-wrapper">
-        <div id="counter-display"></div>
+        <div part="display" id="counter-display"></div>
         <div id="counter-controls">
-            <button class="button" id="counter-decrement-button">-</button>
-            <button class="button" id="counter-increment-button">+</button>
+            <button part="button" class="button" id="counter-decrement-button">-</button>
+            <button part="button" class="button" id="counter-increment-button">+</button>
         <div>
     </div>
 `;
